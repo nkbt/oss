@@ -271,6 +271,16 @@ a:focus {
   white-space: nowrap;
 }
 
+.step h1 {
+  display: block;
+  font-size: 1.4em;
+  line-height: 100px;
+  font-weight: bold;
+  text-align: center;
+
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
 .step h2 {
   display: block;
   font-size: 1.2em;
@@ -278,6 +288,8 @@ a:focus {
 
   padding-bottom: 40px;
   text-align: center;
+
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .step h3 {
