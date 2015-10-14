@@ -340,6 +340,12 @@ a:focus {
   color: red;
 }
 
+.step sub {
+  font-size: 0.5em;
+  padding: 2em 5em;
+  color: #666;
+}
+
 /*
     And now we start to style each step separately.
 
