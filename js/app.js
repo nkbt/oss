@@ -86,6 +86,12 @@
   $$()('section').forEach((section, sectionIndex) => {
     lastX = 0;
     lastY = sectionIndex * 900;
+    const bgColor = `rgba(
+      ${Math.round(Math.random() * 1000) % 150},
+      ${Math.round(Math.random() * 700) % 150},
+      ${Math.round(Math.random() * 500) % 150},
+      0.1)`;
+
 
     $$(section)('article').forEach((article, articleIndex) => {
       const id = section.id;
@@ -110,6 +116,7 @@
 
       const bg = document.createElement('div');
       bg.classList.add('bg');
+      bg.style.backgroundColor = bgColor;
 
       article.appendChild(bg)
     });
