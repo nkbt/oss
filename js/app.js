@@ -88,10 +88,13 @@
     lastY = sectionIndex * 900;
 
     $$(section)('article').forEach((article, articleIndex) => {
+      const id = section.id;
+      section.removeAttribute(id);
+
       if (articleIndex === 0) {
-        article.id = section.dataset.id;
+        article.id = id;
       }
-      article.dataset.id = section.dataset.id;
+      article.dataset.id = id;
       article.classList.add('step');
 
       if (article.classList.contains('same')) {
