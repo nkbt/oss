@@ -117,6 +117,7 @@
       const bg = document.createElement('div');
       bg.classList.add('bg');
       bg.style.backgroundColor = bgColor;
+      bg.style.zIndex = -1;
 
       article.appendChild(bg)
     });
